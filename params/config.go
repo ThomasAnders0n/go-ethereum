@@ -47,10 +47,10 @@ var TrustedCheckpoints = map[common.Hash]*TrustedCheckpoint{
 // CheckpointOracles associates each known checkpoint oracles with the genesis hash of
 // the chain it belongs to.
 var CheckpointOracles = map[common.Hash]*CheckpointOracleConfig{
-	MainnetGenesisHash: MainnetCheckpointOracle,
+      /*MainnetGenesisHash: MainnetCheckpointOracle,
 	RopstenGenesisHash: RopstenCheckpointOracle,
 	RinkebyGenesisHash: RinkebyCheckpointOracle,
-	GoerliGenesisHash:  GoerliCheckpointOracle,
+	GoerliGenesisHash:  GoerliCheckpointOracle,  */
 }
 
 var (
@@ -61,7 +61,7 @@ var (
 		DAOForkBlock:        big.NewInt(1_920_000),
 		DAOForkSupport:      true,
 		EIP150Block:         big.NewInt(2_463_000),
-		EIP150Hash:          common.HexToHash("0x2086799aeebeae135c246c65021c82b4e15a2c451340993aacfd2751886514f0"),
+		EIP150Hash:          common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
 		EIP155Block:         big.NewInt(2_675_000),
 		EIP158Block:         big.NewInt(2_675_000),
 		ByzantiumBlock:      big.NewInt(4_370_000),
@@ -85,7 +85,7 @@ var (
 
 	// MainnetCheckpointOracle contains a set of configs for the main network oracle.
 	MainnetCheckpointOracle = &CheckpointOracleConfig{
-		Address: common.HexToAddress("0x9a9070028361F7AAbeB3f2F2Dc07F82C4a98A02a"),
+		/*Address: common.HexToAddress("0x9a9070028361F7AAbeB3f2F2Dc07F82C4a98A02a"),
 		Signers: []common.Address{
 			common.HexToAddress("0x1b2C260efc720BE89101890E4Db589b44E950527"), // Peter
 			common.HexToAddress("0x78d1aD571A1A09D60D9BBf25894b44e4C8859595"), // Martin
@@ -93,7 +93,7 @@ var (
 			common.HexToAddress("0xb86e2B0Ab5A4B1373e40c51A7C712c70Ba2f9f8E"), // Gary
 			common.HexToAddress("0x0DF8fa387C602AE62559cC4aFa4972A7045d6707"), // Guillaume
 		},
-		Threshold: 2,
+		Threshold: 2,*/
 	}
 
 	// RopstenChainConfig contains the chain parameters to run a node on the Ropsten test network.
